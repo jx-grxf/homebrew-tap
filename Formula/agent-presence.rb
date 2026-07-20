@@ -8,18 +8,18 @@ class AgentPresence < Formula
   on_macos do
     on_arm do
       url "https://github.com/jx-grxf/agent-presence/releases/download/v0.2.1/agent-presence-v0.2.1-aarch64-apple-darwin.tar.gz"
-      sha256 "403f8a5adbae82ddf9cad9a4ed5ac152d90df27f7726df79712cefffa85f8c3e"
+      sha256 "8272d2ce8ff6490928f4d37575afc150135a82a7e87508f5a21649e8c593f27d"
     end
     on_intel do
       url "https://github.com/jx-grxf/agent-presence/releases/download/v0.2.1/agent-presence-v0.2.1-x86_64-apple-darwin.tar.gz"
-      sha256 "b444843212f486e2e51e62857f361e46ee78059ff5e8cf045c7cfa7bd4028a2c"
+      sha256 "f09a015bbc8612217791489b57d83ec198bf3b30c80deb4afc8dd9192a3bc9e3"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/jx-grxf/agent-presence/releases/download/v0.2.1/agent-presence-v0.2.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "c4ad7152dc6ff143633a82e5fbac699dbd8355733b7d19e4dc4c1a0783a7c41c"
+      sha256 "38e32b1429378fc0d3b2d5c897cc5cf3876dd354a26b9dc07a8c1e241c69d35d"
     end
   end
 
