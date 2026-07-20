@@ -1,24 +1,25 @@
 class AgentPresence < Formula
   desc "Discord Rich Presence for Claude Code and Codex"
   homepage "https://github.com/jx-grxf/agent-presence"
-  version "0.1.0"
   license "MIT"
+  # No `version` stanza: Homebrew scans it from the URL, and `brew audit --strict`
+  # rejects stating it twice.
 
   on_macos do
     on_arm do
       url "https://github.com/jx-grxf/agent-presence/releases/download/v0.1.0/agent-presence-v0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "09023860c4ecf70337522510154a7cdc3ec9d3fef002a0931892fb3c401fe151"
+      sha256 "b8ea53ada428f3e1a805d516f28ca428daddec9b10b2a5b09c91742bb7b6f0db"
     end
     on_intel do
       url "https://github.com/jx-grxf/agent-presence/releases/download/v0.1.0/agent-presence-v0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "4049078884980af7c00966902c29a12881578fc337013d7d72cb8d0eb777eaea"
+      sha256 "76fa9a50e92d1166de800a1cf22bfd27bcd6d271ff90c764216bafc6d951de0a"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/jx-grxf/agent-presence/releases/download/v0.1.0/agent-presence-v0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "78c8c6d31ace2a83e6486059666b65beac539faa51dfa1fffa2e7345c996813d"
+      sha256 "8dd4da8b9d6efa37c16485f36e310e9800157f293bc60ec3e9543df7e5973bcd"
     end
   end
 
