@@ -7,19 +7,19 @@ class AgentPresence < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/jx-grxf/agent-presence/releases/download/v0.2.0/agent-presence-v0.2.0-aarch64-apple-darwin.tar.gz"
-      sha256 "e5e8326865627843e85a39c38c617d9a6b49556c2a511a392385f655b05055be"
+      url "https://github.com/jx-grxf/agent-presence/releases/download/v0.2.1/agent-presence-v0.2.1-aarch64-apple-darwin.tar.gz"
+      sha256 "403f8a5adbae82ddf9cad9a4ed5ac152d90df27f7726df79712cefffa85f8c3e"
     end
     on_intel do
-      url "https://github.com/jx-grxf/agent-presence/releases/download/v0.2.0/agent-presence-v0.2.0-x86_64-apple-darwin.tar.gz"
-      sha256 "823cca7d1396daffa233642a71d3154366fc1710197e64c51523e6192bf725d4"
+      url "https://github.com/jx-grxf/agent-presence/releases/download/v0.2.1/agent-presence-v0.2.1-x86_64-apple-darwin.tar.gz"
+      sha256 "b444843212f486e2e51e62857f361e46ee78059ff5e8cf045c7cfa7bd4028a2c"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/jx-grxf/agent-presence/releases/download/v0.2.0/agent-presence-v0.2.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "46fb374f60f783dbf3d4811d02f542a418791a763e06f8b21ee5f6a55a001b33"
+      url "https://github.com/jx-grxf/agent-presence/releases/download/v0.2.1/agent-presence-v0.2.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "c4ad7152dc6ff143633a82e5fbac699dbd8355733b7d19e4dc4c1a0783a7c41c"
     end
   end
 
@@ -27,11 +27,16 @@ class AgentPresence < Formula
     bin.install "agent-presence"
   end
 
+  # Deliberately not a post_install hook: Homebrew sandboxes it and a formula must not
+  # write outside the prefix, so wiring ~/.claude and ~/.codex is the user's call.
   def caveats
     <<~EOS
-      Wire it into the agents you have installed:
-        agent-presence install
-        agent-presence doctor
+      One command left — it detects Claude Code and Codex and wires them up:
+
+        agent-presence
+
+      Then `agent-presence config` to choose what the card shows.
+      Nothing identifying is shown by default.
     EOS
   end
 
