@@ -5,6 +5,7 @@ Homebrew formulae and casks for [jx-grxf](https://github.com/jx-grxf) tools.
 ```bash
 brew tap jx-grxf/tap
 brew install jx-grxf/tap/agent-presence
+brew trust --cask jx-grxf/tap/dysonbar   # casks from third-party taps need this once
 brew install --cask jx-grxf/tap/dysonbar
 ```
 
