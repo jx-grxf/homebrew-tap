@@ -1,28 +1,28 @@
 class Dirhop < Formula
   desc "Fast fuzzy folder picker for your terminal"
   homepage "https://github.com/jx-grxf/dirhop"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/jx-grxf/dirhop/releases/download/v0.3.0/dirhop-aarch64-apple-darwin.tar.gz"
-      sha256 "48af7387348dd54d7df1c206e682a851542e119a322c9264051facc4a5ea1a4a"
+      url "https://github.com/jx-grxf/dirhop/releases/download/v0.3.1/dirhop-aarch64-apple-darwin.tar.gz"
+      sha256 "0035b127efa790ecc571bebe2cdb4d6d5beba14a0971945281234c447ca233a8"
     end
     on_intel do
-      url "https://github.com/jx-grxf/dirhop/releases/download/v0.3.0/dirhop-x86_64-apple-darwin.tar.gz"
-      sha256 "a37e50b51ce9112859f8ee8630efaa45a08f684f1fc6a311d594a9531d097522"
+      url "https://github.com/jx-grxf/dirhop/releases/download/v0.3.1/dirhop-x86_64-apple-darwin.tar.gz"
+      sha256 "0db0988ab1b172e119d888636661b09a14590b3f2958572f4e8c8a1db06e0b83"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/jx-grxf/dirhop/releases/download/v0.3.0/dirhop-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "fb644f0bdec57b2de56e958f375fa54a7eed1884c0ec82419d8425e8198da2b7"
+      url "https://github.com/jx-grxf/dirhop/releases/download/v0.3.1/dirhop-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "e95d512f7cdf30af0ac141850a0f217a03bccb0a37d2e3296d4bb2ef145dcc72"
     end
     on_intel do
-      url "https://github.com/jx-grxf/dirhop/releases/download/v0.3.0/dirhop-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "0f062edc2e4c49bdf2d0e8ec50c5b5b4b6b8523abde5ebefe5a690068bfcb8a4"
+      url "https://github.com/jx-grxf/dirhop/releases/download/v0.3.1/dirhop-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "10d452e8adeae09d038e8ccd20289baafaf79ce89bd1c81de04668d39860e006"
     end
   end
 
