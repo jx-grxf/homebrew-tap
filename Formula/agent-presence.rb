@@ -7,19 +7,19 @@ class AgentPresence < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/jx-grxf/agent-presence/releases/download/v0.3.0/agent-presence-v0.3.0-aarch64-apple-darwin.tar.gz"
-      sha256 "dd8dea61a04154eb2be645ffff5b9eb0312df593faba5845ac958d39ba00c393"
+      url "https://github.com/jx-grxf/agent-presence/releases/download/v0.3.1/agent-presence-v0.3.1-aarch64-apple-darwin.tar.gz"
+      sha256 "65fb0bd75c0543a46845bd0c345bd141c015ce36af04776e832cc13ee6be608f"
     end
     on_intel do
-      url "https://github.com/jx-grxf/agent-presence/releases/download/v0.3.0/agent-presence-v0.3.0-x86_64-apple-darwin.tar.gz"
-      sha256 "277169c399ceccd8f539ab866b3378daee16a175ea7d2377ab08bcb4fce4461e"
+      url "https://github.com/jx-grxf/agent-presence/releases/download/v0.3.1/agent-presence-v0.3.1-x86_64-apple-darwin.tar.gz"
+      sha256 "9c1f7855fa54da1a0735f859f5469a0de35609fdf2344ae9f2e524ebddfe6ab3"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/jx-grxf/agent-presence/releases/download/v0.3.0/agent-presence-v0.3.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "161ace6d4f0f4d4b42e22a1d8f001fdc94946daf4b481888ed711032bf7bea05"
+      url "https://github.com/jx-grxf/agent-presence/releases/download/v0.3.1/agent-presence-v0.3.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "130f561537c7a3d4b0a8265f398458967babf38b540b8e8adddb50964a960604"
     end
   end
 
